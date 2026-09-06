@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f6fb;
+  color: #202938;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+#login-form {
+  width: min(300px, 100%);
+  min-height: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 2px solid rgba(31, 45, 61, 0.16);
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+#login-form > label {
+  width: 80%;
+  padding: 10px 0 6px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #aeb7c2;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.password-toggle {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 0;
+  font-size: 14px;
+}
+
+.password-toggle input {
+  width: 16px;
+  height: 16px;
+}
+
+.password-toggle label {
+  font-weight: 500;
+}
+
+#submit {
+  width: 250px;
+  max-width: 100%;
+  padding: 9px 16px;
+  outline: 0;
+  border: 0;
+  border-radius: 20px;
+  background-color: royalblue;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+#submit:hover {
+  opacity: 0.75;
+}
+
+#submit:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 3px solid #8eb1ff;
+  outline-offset: 2px;
+}
+
+.home-content {
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+}
+
+.home-content a {
+  color: royalblue;
+  font-weight: 500;
+}

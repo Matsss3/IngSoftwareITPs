@@ -1,0 +1,141 @@
+:root {
+  color: #202938;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f4f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app-container {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px;
+}
+
+.todo-app {
+  width: min(100%, 520px);
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 2px solid rgb(32 41 56 / 12%);
+}
+
+h1 {
+  margin: 0 0 24px;
+  color: #263b60;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+}
+
+.task-form input {
+  min-width: 0;
+  flex: 1;
+  padding: 12px 14px;
+  color: inherit;
+  font: inherit;
+  border: 1px solid #c6d1df;
+  border-radius: 8px;
+}
+
+.task-form input:focus {
+  outline: 3px solid rgb(62 115 183 / 25%);
+  border-color: #3e73b7;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+#add-task-button {
+  width: 46px;
+  color: #ffffff;
+  font-size: 1.55rem;
+  font-weight: bold;
+  line-height: 1;
+  background: #3e73b7;
+  border: 0;
+  border-radius: 8px;
+}
+
+#add-task-button:hover,
+#add-task-button:focus-visible {
+  background: #2c5e9e;
+}
+
+.task-list {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 14px;
+  background: #f3f7fc;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.delete-task-button {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  color: #b42318;
+  font-weight: bold;
+  line-height: 1;
+  background: #ffffff;
+  border: 1px solid #e3a6a1;
+  border-radius: 50%;
+}
+
+.delete-task-button:hover,
+.delete-task-button:focus-visible {
+  color: #ffffff;
+  background: #b42318;
+}
+
+.empty-message {
+  margin: 22px 0 0;
+  color: #64748b;
+  text-align: center;
+}
+
+.empty-message[hidden] {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 420px) {
+  .todo-app {
+    padding: 24px 18px;
+  }
+}

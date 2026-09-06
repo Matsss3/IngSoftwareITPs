@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="app-container">
+      <section class="todo-app" aria-labelledby="page-title">
+        <h1 id="page-title">Lista de tareas</h1>
+
+        <form id="task-form" class="task-form">
+          <label class="sr-only" for="task-input">Nueva tarea</label>
+          <input
+            id="task-input"
+            name="task"
+            type="text"
+            placeholder="Agregar tarea"
+            autocomplete="off"
+          />
+          <button id="add-task-button" type="submit" aria-label="Añadir tarea">
+            +
+          </button>
+        </form>
+
+        <p id="empty-message" class="empty-message">No tienes tareas pendientes</p>
+        <ul id="task-list" class="task-list" aria-label="Tareas pendientes"></ul>
+      </section>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
