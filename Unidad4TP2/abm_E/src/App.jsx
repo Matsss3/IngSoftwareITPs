@@ -63,7 +63,7 @@ export default function App() {
             <div>
               <h1 className="miga-page-title">Mis direcciones</h1>
               <p className="miga-page-subtitle">
-                Tus lugares favoritos, a un pedido de distancia.
+                Cada antojo empieza con saber dónde encontrarte.
               </p>
             </div>
 

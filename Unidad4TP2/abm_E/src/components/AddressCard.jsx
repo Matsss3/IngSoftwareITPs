@@ -19,7 +19,7 @@ export default function AddressCard({ address, onEdit }) {
             {address.calle} {address.numero}
           </div>
           <div className="miga-card-city">
-            {address.localidad} · {address.ciudad}
+            {address.localidad} · {address.ciudad} <span className="miga-address-coordinates">{address.coordenadas}</span>
           </div>
         </div>
       </div>

@@ -14,15 +14,15 @@ function Sidebar() {
         <div className="sidebar-logo-icon">
           <Globe size={16} />
         </div>
-        <span className="sidebar-logo-text">Mi Consorcio</span>
+          <span className="sidebar-logo-text">Atlas <b>Sur</b></span>
       </div>
 
       <nav className="sidebar-nav">
-        <p className="sidebar-section-label">General</p>
+        <p className="sidebar-section-label">Espacio de trabajo</p>
         <NavItem icon={<Home size={15} />} label="Inicio" />
         <NavItem icon={<Building2 size={15} />} label="Consorcios" />
 
-        <p className="sidebar-section-label">Administración</p>
+        <p className="sidebar-section-label">Geografía</p>
         <NavItem icon={<Globe size={15} />} label="Países" active />
         <NavItem icon={<Map size={15} />} label="Provincias" />
         <NavItem icon={<MapPin size={15} />} label="Localidades" />
@@ -104,9 +104,9 @@ function App() {
   const [paises, setPaises] = useState(() => {
     try {
       const stored = localStorage.getItem(LS_KEY)
-      return stored ? JSON.parse(stored) : ['Chile', 'Perú', 'Uruguay']
+      return stored ? JSON.parse(stored) : ['Argentina', 'Bolivia', 'Brasil', 'Chile', 'Paraguay', 'Uruguay']
     } catch {
-      return ['Chile', 'Perú', 'Uruguay']
+      return ['Argentina', 'Bolivia', 'Brasil', 'Chile', 'Paraguay', 'Uruguay']
     }
   })
 
@@ -209,8 +209,9 @@ function App() {
 
         {/* Page header */}
         <div className="page-header">
-          <h1 className="page-title">Administración de Países</h1>
-          <p className="page-subtitle">Gestioná los países disponibles para los consorcios.</p>
+          <div className="eyebrow">CATÁLOGO TERRITORIAL · EDICIÓN 2025</div>
+          <h1 className="page-title">Países de la región</h1>
+          <p className="page-subtitle">Una mirada clara sobre los territorios que forman parte de Atlas Sur.</p>
         </div>
 
         {/* Card */}
@@ -219,7 +220,7 @@ function App() {
           <div className="card-toolbar">
             <button className="btn btn-primary" onClick={handleAltaOpen}>
               <span className="btn-plus">+</span>
-              Alta de País
+              Nuevo país
             </button>
             <span className="card-count">
               {paises.length} {paises.length === 1 ? 'país registrado' : 'países registrados'}
@@ -230,8 +231,8 @@ function App() {
           <table className="data-table">
             <thead>
               <tr>
-                <th>Modificar</th>
-                <th>Baja</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
                 <th>Nombre</th>
               </tr>
             </thead>

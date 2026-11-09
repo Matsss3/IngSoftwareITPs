@@ -1,4 +1,4 @@
-import { ChevronDown, Utensils } from 'lucide-react'
+import { ChevronDown, Soup } from 'lucide-react'
 
 export default function MigaHeader() {
   return (
@@ -7,22 +7,22 @@ export default function MigaHeader() {
         {/* Brand logo: icon + 'miga' */}
         <div className="miga-brand">
           <div className="miga-brand-icon">
-            <Utensils size={20} strokeWidth={2.4} />
+            <Soup size={20} strokeWidth={2.4} />
           </div>
-          <span className="miga-brand-name">miga</span>
+          <span className="miga-brand-name">buen bocado</span>
         </div>
 
         {/* Center navigation links */}
         <nav className="miga-header-nav">
-          <button type="button" className="miga-nav-link">Restaurantes</button>
+          <button type="button" className="miga-nav-link">Descubrir</button>
           <button type="button" className="miga-nav-link">Mis pedidos</button>
-          <button type="button" className="miga-nav-link">Ayuda</button>
+          <button type="button" className="miga-nav-link">Club del barrio</button>
         </nav>
 
         {/* User profile dropdown pill */}
         <div className="miga-user-pill">
-          <div className="miga-user-avatar">VL</div>
-          <span className="miga-user-name">Valentina</span>
+          <div className="miga-user-avatar">JM</div>
+          <span className="miga-user-name">Julián</span>
           <ChevronDown size={16} className="miga-chevron" />
         </div>
       </div>

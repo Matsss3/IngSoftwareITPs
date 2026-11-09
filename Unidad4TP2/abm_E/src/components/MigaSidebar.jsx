@@ -3,27 +3,27 @@ import { User, MapPin, CreditCard, Heart, LogOut } from 'lucide-react'
 export default function MigaSidebar() {
   return (
     <aside className="miga-sidebar">
-      <div className="miga-sidebar-section-title">MI CUENTA</div>
+      <div className="miga-sidebar-section-title">TU RINCÓN</div>
 
       <nav className="miga-sidebar-nav">
         <button type="button" className="miga-sidebar-item">
           <User size={18} />
-          <span>Mi perfil</span>
+          <span>Mi cuenta</span>
         </button>
 
         <button type="button" className="miga-sidebar-item active">
           <MapPin size={18} />
-          <span>Mis direcciones</span>
+          <span>Mis lugares</span>
         </button>
 
         <button type="button" className="miga-sidebar-item">
           <CreditCard size={18} />
-          <span>Medios de pago</span>
+          <span>Cómo pago</span>
         </button>
 
         <button type="button" className="miga-sidebar-item">
           <Heart size={18} />
-          <span>Mis favoritos</span>
+          <span>Para volver</span>
         </button>
 
         <div className="miga-sidebar-spacer"></div>
